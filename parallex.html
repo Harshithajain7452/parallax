@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parallax Elegance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    .parallax {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .bg-hero {
+      background-image: url('https://source.unsplash.com/1600x900/?nature,landscape');
+    }
+    .bg-portfolio {
+      background-image: url('https://source.unsplash.com/1600x900/?technology,futuristic');
+    }
+    .bg-contact {
+      background-image: url('https://source.unsplash.com/1600x900/?city,night');
+    }
+    .cursive {
+      font-family: 'Pacifico', cursive;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="text-white bg-gray-900">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full z-50 bg-black bg-opacity-70 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold cursive text-yellow-400">Elegance</h1>
+      <ul class="flex space-x-8 text-lg">
+        <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+        <li><a href="#portfolio" class="hover:text-yellow-400">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="parallax bg-hero h-screen flex items-center justify-center">
+    <div class="bg-black bg-opacity-60 p-8 rounded-xl text-center">
+      <h2 class="text-5xl md:text-7xl font-bold mb-4 cursive text-yellow-300">Scroll in Style</h2>
+      <p class="text-xl md:text-2xl">Experience modern parallax design aesthetics</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white text-black py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-semibold mb-6">About Us</h2>
+      <p class="text-lg leading-relaxed">We are a creative agency focused on bringing immersive web experiences to life. From elegant parallax effects to dynamic design systems, we aim to inspire and innovate with every scroll.</p>
+    </div>
+  </section>
+
+  <!-- Parallax Portfolio Section -->
+  <section id="portfolio" class="parallax bg-portfolio h-screen flex items-center justify-center">
+    <div class="bg-black bg-opacity-60 p-8 rounded-xl text-center">
+      <h2 class="text-5xl font-bold cursive text-pink-400 mb-4">Our Work</h2>
+      <p class="text-xl">Where technology meets creativity</p>
+    </div>
+  </section>
+
+  <!-- Gallery Cards -->
+  <section class="bg-gray-100 text-gray-800 py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-semibold text-center mb-10">Featured Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+          <img src="https://source.unsplash.com/600x400/?design" alt="Project 1" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Creative UI</h3>
+            <p>Innovative and responsive interfaces for modern web apps.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+          <img src="https://source.unsplash.com/600x400/?coding" alt="Project 2" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Smart Systems</h3>
+            <p>Automation and AI-powered designs for future-ready platforms.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+          <img src="https://source.unsplash.com/600x400/?innovation" alt="Project 3" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Elegant Solutions</h3>
+            <p>Sleek and minimal websites that highlight user-first design.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Contact Section -->
+  <section id="contact" class="parallax bg-contact h-screen flex items-center justify-center">
+    <div class="bg-black bg-opacity-60 p-8 rounded-xl text-center">
+      <h2 class="text-4xl font-bold cursive text-blue-300 mb-4">Get in Touch</h2>
+      <p class="text-lg">Reach out to collaborate or start your project with us!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-6 text-center">
+    <p class="text-sm">&copy; 2025 Parallax Elegance. Crafted with passion.</p>
+  </footer>
+
+</body>
+</html>
